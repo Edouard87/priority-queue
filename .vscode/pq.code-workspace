@@ -1,0 +1,49 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.rmd": "markdown",
+			"stdlib.h": "c",
+			"limits": "c",
+			"*.tcc": "c",
+			"type_traits": "c",
+			"basic.h": "c",
+			"Gemfile": "ruby",
+			"priority-queue.h": "c",
+			"time.h": "c"
+		}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Build Library",
+				"command": "make",
+				"args": [
+					"build"
+				]
+			},
+			{
+				"label": "Build Tester",
+				"command": "make",
+				"args": [
+					"test"
+				],
+				"problemMatcher": [],
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				}
+			},
+			{
+				"label": "Check Memory",
+				"command": "make",
+				"args": ["memcheck"]
+			}
+		]
+	}
+}

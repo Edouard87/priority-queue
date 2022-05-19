@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown",
+        "stdlib.h": "c",
+        "limits": "c",
+        "*.tcc": "c",
+        "type_traits": "c",
+        "basic.h": "c",
+        "Gemfile": "ruby",
+        "math.h": "c"
+    }
+}
